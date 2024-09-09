@@ -6,3 +6,8 @@ sky:
     database: sky_take_out
     username: root
     password: 123456
+  alioss:
+    endpoint: oss-cn-shenzhen.aliyuncs.com
+    access-key-id: LTAI5tKuUG5nocnFpmbo2ncM
+    access-key-secret: g7z5qnDUbW7fn5qCQ1j5gojCB80uuL
+    bucket-name: sky-take-out-sawarei
