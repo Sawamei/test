@@ -92,4 +92,18 @@ public class DishController {
         dishService.updateWithFlavor(dishDTO);
         return Result.success();
     }
+
+    /**
+     * 启售停售菜品
+     * @param status
+     * @param id
+     * @return
+     */
+    @PostMapping("/status/{status}")
+    @ApiOperation("启售停售菜品")
+    public Result startOrStop(@PathVariable("status") Integer status,Long id){
+        log.info("启售停售菜品,菜品状态为:{},菜品id为{}",status,id);
+        dishService.startOrStop(status,id);
+        return Result.success();
+    }
 }
